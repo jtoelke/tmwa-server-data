@@ -142,6 +142,12 @@ equip_misc2 8
 equip_torso 9
 equip_legs 10
 
+// Ammo types for different kinds of ranged weapons
+// no ammo equippped    0
+AMMO_ARROW              1
+AMMO_QUARREL            2
+AMMO_PEBBLE             3
+
 // Appearance slots
 // Using this for anything but hair is probably a mistake
 LOOK_BASE       0

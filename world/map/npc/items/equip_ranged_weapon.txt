@@ -1,0 +1,13 @@
+// Author: Jenalya, o11c
+// Variables in this script:
+// @ammo_type defines the type of the last equipped ammo
+// @expected_ammo defines the ammo type expected by the last equipped ranged weapon
+
+function|script|CheckAmmo|{
+    // the map-server crashs if we don't check for (@ammo_type == 0) here
+    if ((@ammo_type == @expected_ammo) || (@ammo_type == 0) || (@expected_ammo == 0))
+        end;
+    set @ammo_type, 0;
+    unequipbyid 10; // unequips the ammo slot
+    end;
+}
