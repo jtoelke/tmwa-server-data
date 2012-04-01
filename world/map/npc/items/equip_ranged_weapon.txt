@@ -5,6 +5,9 @@
 
 function|script|CheckAmmo|{
     // the map-server crashs if we don't check for (@ammo_type == 0) here
+    message strcharinfo(0), "@ammo_type: " + @ammo_type;
+    message strcharinfo(0), "@expected_ammo: " + @expected_ammo;
+    // TODO get weapon slot und set @expected_ammo, 0; if empty
     if ((@ammo_type == @expected_ammo) || (@ammo_type == 0) || (@expected_ammo == 0))
         end;
     set @ammo_type, 0;
