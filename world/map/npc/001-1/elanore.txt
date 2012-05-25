@@ -8,9 +8,9 @@ function|script|ElanoreFix|{
 
     set @Q_status, (QUEST_MAGIC2 & @Q_MASK) >> @Q_SHIFT;
     if (@Q_status > @Q_STATUS_MAX)
-    set @Q_status, @STATUS_INITIAL;
+        set @Q_status, @STATUS_INITIAL;
     if (@Q_status > 1 && (getskilllv(SKILL_MAGIC_LIFE) < 2))
-    set @Q_status, @STATUS_INITIAL;
+        set @Q_status, @STATUS_INITIAL;
 
     set QUEST_MAGIC2, (QUEST_MAGIC2 & ~(@Q_MASK) | (@Q_status << @Q_SHIFT));
     return;
@@ -42,7 +42,7 @@ function|script|ElanoreFix|{
 
     // This operation works around an earlier possible corruption of this state
     if (@Q_status > @Q_STATUS_MAX)
-    set @Q_status, @STATUS_INITIAL;
+        set @Q_status, @STATUS_INITIAL;
     callsub S_update_var;
     if (sc_check(sc_poison)) goto L_CurePoison;
     if (BaseLevel > 10) goto L_NoHeal;
@@ -251,7 +251,7 @@ L_Teach:
 L_Teach_Initial:
     mes "[Elanore the Healer]";
     mes "\"I will only teach you magic of the school of Life, and that only if you prove yourself to be a good healer-- that is, if you use your powers to help others.\"";
-    mes "She hesistates.";
+    mes "She hesitates.";
     next;
     mes "[Elanore the Healer]";
     mes "\"I don't know you very well, but I don't think that there is any harm in teaching you a simple spell.\"";
