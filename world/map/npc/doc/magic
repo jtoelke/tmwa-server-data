@@ -9,8 +9,28 @@ Nibble use:
 == QUEST_MAGIC2
   N0: Evil Earth Spirit
   N1: Elanore
+    currently: set @Q_STATUS_MAX, 3;
+    this should be changed as soon as magic level 3 is available
+
+    @STATUS_INITIAL, 0;
+    @STATUS_LEARNED_LIGHT_HEAL, 1;
+    @STATUS_MASTERED_LIGHT_HEAL, 2;
+    @STATUS_LEARNED_LAY_ON_HANDS, 3;
+    @STATUS_WAITING_FOR_KADIYA, 4;
+    @STATUS_READY_TO_LEARN_CURE_POISON, 5;
+    @STATUS_LEARNED_CURE_POISON, 6;
   N2: Wyara
   N3: Elanore subquests (Cure Kadiya)
+    @Q_STATUS_NONE, 0;
+    @Q_STATUS_KNOWS_MOPOX, 1;
+    @Q_STATUS_MADE_MOPOX, 2;
+    @Q_STATUS_DIDNT_DRINK, 3;
+    @Q_STATUS_WANTS_CHOCOCAKE, 4;
+    @Q_STATUS_WANTS_ORANGECUPCAKE, 5;
+    @Q_STATUS_COMPLETED, 6;
+    @Q_STATUS_COMPLETED_ELANORE, 7;
+    @Q_STATUS_COMPLETED_NOELANORE, 8;
+    @Q_STATUS_COMPLETED_POST_ELANORE, 9;
   N4-N7:  may be messy at this point
 
 The various magic scripts pack their status into these variables.
