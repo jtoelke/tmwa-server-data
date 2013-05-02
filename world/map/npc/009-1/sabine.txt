@@ -30,3 +30,18 @@ L_Close:
     set @inspector, 0;
     close;
 }
+
+009-1.gat,90,27,0|script|ShapeShifter|106,{
+    if ($@state == 1)
+        goto L_YoungAgain;
+    mes "I will turn into an old woman now.";
+    fakenpcname "ShapeShifter", "OldWoman", 154;
+    set $@state, 1;
+    close;
+
+L_YoungAgain:
+    mes "And now I will turn back into a young woman.";
+    fakenpcname "ShapeShifter", "YoungWoman", 106;
+    set $@state, 0;
+    close;
+}
