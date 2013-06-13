@@ -31,7 +31,7 @@ L_Diryn_Yes:
         "Magic House (" + @cost_magichouse + " GP)", L_Diryn_Magic_House,
         "Terranite Cave (" + @cost_terranitecave + " GP)", L_Diryn_Terranite,
         "Tulimshar Town Square (" + @cost_tulimshar + " GP)", L_Diryn_Tulimshar,
-        "Nivalis College of Blue Sages (" + @cost_nivalis + " GP)", L_Diryn_Nivalis,
+        "Sage Nicholai's Mansion (" + @cost_nivalis + " GP)", L_Diryn_Nivalis,
         "I'm not interested.", L_Diryn_No;
 
 L_Diryn_Druid_Tree:
